@@ -31,8 +31,8 @@ button,input{font:inherit}
 .inside h2{font-size:clamp(32px,9vw,43px);line-height:.98;letter-spacing:-.04em;margin:0;color:#0b563e;font-weight:normal}
 .inside h2 span{color:#b38a2e;font-style:italic}
 .rule{width:55px;height:1px;background:#c6a450;margin:16px auto}
-.photo-frame{width:min(100%,290px);height:230px;margin:0 auto;position:relative;padding:8px;background:white;box-shadow:0 8px 22px #1a39201c;transform:rotate(-1deg);border:1px solid #e4dfd0;z-index:1}
-.photo-frame img{width:100%;height:100%;object-fit:cover;display:block;background:linear-gradient(135deg,#d7e5d8,#f2e8ca);opacity:1;transition:opacity .45s ease}
+.photo-frame{width:min(100%,290px);aspect-ratio:3/4;height:auto;margin:0 auto;position:relative;padding:8px;background:white;box-shadow:0 8px 22px #1a39201c;transform:rotate(-1deg);border:1px solid #e4dfd0;z-index:1}
+.photo-frame img{width:100%;height:100%;object-fit:contain;display:block;background:#fff;opacity:1;transition:opacity .45s ease}
 .photo-frame img.changing{opacity:0}
 .photo-counter{position:absolute;right:13px;bottom:13px;background:#073d2ddd;color:#fff8e5;border:1px solid #e8c87899;border-radius:99px;padding:5px 8px;font:10px Arial,sans-serif;letter-spacing:.12em;z-index:2}
 .photo-controls{display:flex;align-items:center;justify-content:center;gap:19px;margin-top:13px}
@@ -60,7 +60,7 @@ button,input{font:inherit}
 .sparkle{position:absolute;color:#d6b45c;animation:twinkle 2.2s ease-in-out infinite}
 @keyframes twinkle{50%{opacity:.25;transform:scale(.7)}}
 .hint{font:11px Arial,sans-serif;color:#d8e8db;text-align:center;margin-top:18px;letter-spacing:.04em}
-@media(max-height:740px){.scene{padding:16px 14px}.card,.inside{min-height:540px}.photo-frame{height:190px}.message{margin-top:12px}.footer{margin-top:12px}}
+@media(max-height:740px){.scene{padding:16px 14px}.card,.inside{min-height:540px}.message{margin-top:12px}.footer{margin-top:12px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 </style>
 </head>
